@@ -13,15 +13,15 @@ public class threaddemo2 implements Runnable {
     
     //public void notify(){}
     public static void main(String args[]){
-        threaddemo2 obj=new threaddemo2();
+        threaddemo2 obj=new threaddemo2("gayi");
         Thread t1=new Thread(obj);
-        Thread t2=new Thread("yamu");
+        //Thread t2=new Thread("yamu");
         t1.run();
         
-        t2.run();
+        //t2.run();
         t1.start();
         
-        t2.start();
+        //t2.start();
     }
         
     }
